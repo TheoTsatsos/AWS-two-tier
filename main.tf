@@ -127,7 +127,7 @@ resource "aws_instance" "web" {
 # I run a remote provisioner on the instance after creating it.
 # In this case, I just copy the heelo-world application under /data/www
 provisioner "file" {
-    source      = "JavaHelloWorldApp/HelloWorld.java"
+    source      = "HelloWorld.java"
     destination = "/data/www"
   }
 
